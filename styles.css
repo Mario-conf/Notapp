@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body {
+  background-color: #c9c9c9;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0; 
+}
+
+nav h1 {
+  margin: 0;
+  color: #ffffff; 
+}
+
+.add {
+  background-color: #5f5f5f;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+#toggleMode {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: #ffffff;
+}
+
+#toggleMode:hover {
+  color: #c2c2c2;
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow-y: scroll;
+  transition: transform 0.3s ease;
+}
+#notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.note .tools {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center; 
+}
+.note .tools button:hover {
+  color: #777;
+}
+.note .tools button i {
+  margin-right: 0.5rem; 
+}
+.note .main,
+.note textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.note .main {
+  overflow-y: auto;
+}
+
+.note .main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.note.dark-mode {
+  background-color: #333333;
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.1);
+}
+
+.note.dark-mode .tools {
+  background-color: #292929;
+}
+
+.note.dark-mode .tools button {
+  color: #ddd;
+}
+
+.note.dark-mode .tools button:hover {
+  color: #bbb;
+}
+
+.note.dark-mode .main,
+.note.dark-mode textarea {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.note.dark-mode .main img {
+  filter: invert(1);
+}
+
+
