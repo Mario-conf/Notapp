@@ -2,7 +2,7 @@
 
 ---
 
-![Notapp](/image.png)
+![Notapp](https://i0.wp.com/glasgowguardian.co.uk/wp-content/uploads/sites/2/2020/02/Studygram.jpg?ssl=1)
 
 ### Descripción
 
@@ -41,7 +41,7 @@ Si deseas contribuir al desarrollo de Notapp, sigue estos pasos:
 
 ---
 
-![Notapp](/image.png)
+![Notapp](https://i0.wp.com/glasgowguardian.co.uk/wp-content/uploads/sites/2/2020/02/Studygram.jpg?ssl=1)
 
 ### Description
 
